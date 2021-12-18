@@ -1,5 +1,8 @@
 <?php
 
+use application\controllers\YiiNameSpacedController;
+use NaokiTsuchiya\AdventCalendar2021\PSR4NameSpacedController;
+
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../vendor/yiisoft/yii/framework/yii.php';
 
@@ -17,3 +20,5 @@ echo get_include_path() . PHP_EOL;
 echo class_exists(SiteController::class) . PHP_EOL;
 echo class_exists(UserIdentity::class) . PHP_EOL;
 echo class_exists(ContactForm::class) . PHP_EOL;
+echo class_exists(YiiNameSpacedController::class) . PHP_EOL;
+echo class_exists(PSR4NameSpacedController::class) . PHP_EOL;
