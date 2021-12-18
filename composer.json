@@ -59,7 +59,8 @@
             "@metrics"
         ],
         "post-install-cmd": "@composer bin all install --ansi",
-        "post-update-cmd": "@composer bin all update --ansi"
+        "post-update-cmd": "@composer bin all update --ansi",
+        "serve": "php -S 127.0.0.1:8080 -t public"
     },
     "scripts-descriptions": {
         "test": "Run unit tests",
